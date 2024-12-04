@@ -153,13 +153,7 @@ class Library:
                 print(contents)
     
     # a function to search for books
-    def search_books(self, check):
-        if check:
-            with open (books_file, "a+") as books:
-                books.seek(0)
-                for line in books:
-                    if user.username in line:
-                        pass
+    def search_books(self):
         found = False # a boolean variable which changes if the search term is located
         search_method = input("""Would you like to search by:
 1. Book title
