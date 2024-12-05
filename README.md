@@ -3,7 +3,7 @@
 3. Create a prototype of the Library Management System using a language of your choice. I recommend one of Python, C, C++, C#, or Java. [10 marks]
 4. Present and demonstrate your solution. [10 marks]
 
-1) 
+Question 1 
 A library system for a project consisting of features such as:
 1. Book Management: Ability to add, remove, and search for books.
 2. User Management: Ability to register users and manage their accounts.
@@ -17,5 +17,5 @@ This is done using classes such as:
 4. Admin: A specialised user who can perform all the functions of a normal user but has additional privileges
 5. Transaction: Represents the borrowing and returning activities, recording each transaction’s details, such as date and status.
 
-2) Flowcharts, use case diagram and a class diagram is provided
-3) Library.py attached
+Question 2 Flowcharts, use case diagram and a class diagram is provided
+Question 3 Library.py attached
