@@ -18,4 +18,5 @@ This is done using classes such as:
 5. Transaction: Represents the borrowing and returning activities, recording each transaction’s details, such as date and status.
 
 Question 2 Flowcharts, use case diagram and a class diagram is provided
+
 Question 3 Library.py attached
