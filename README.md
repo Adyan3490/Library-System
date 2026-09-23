@@ -1,22 +1,88 @@
-1. Create a software team from among your classmates. Your team should have at least two members: project manager and a software designer/programmer, but a maximum of 4 members. [5 marks]
-2. Create a software specification document for the system which should include: a flowchart/sequence diagram, a use case diagram, and a class diagram for the Library Management System. It should also include the appropriate pseudocodes. [15 marks]
-3. Create a prototype of the Library Management System using a language of your choice. I recommend one of Python, C, C++, C#, or Java. [10 marks]
-4. Present and demonstrate your solution. [10 marks]
+# Library System
 
-Question 1 
-A library system for a project consisting of features such as:
-1. Book Management: Ability to add, remove, and search for books.
-2. User Management: Ability to register users and manage their accounts.
-3. Borrowing System: Ability for users to borrow and return books, with limits on how many books they can borrow.
-4. Admin Functions: Privileges for an admin to add/remove books and manage user accounts
+A command-line library management system written in Python.
 
-This is done using classes such as:
-1. Book: Represents a book in the library, with attributes like title, author, ISBN, and status (available/borrowed).
-2. User: Represents a user of the library with attributes like name, ID, and list of borrowed books.
-3. Library: Acts as a central hub managing books and users, including the ability to add or remove books and users.
-4. Admin: A specialised user who can perform all the functions of a normal user but has additional privileges
-5. Transaction: Represents the borrowing and returning activities, recording each transaction’s details, such as date and status.
+This project was created to practise object-oriented programming, file handling, user authentication, and managing data through a command-line interface.
 
-Question 2 Flowcharts, use case diagram and a class diagram is provided
+## Features
 
-Question 3 Library.py attached
+* User registration and login
+* Separate user and administrator functionality
+* Add, remove, search, and display books
+* Borrow and return books
+* Maximum borrowing limit of 5 books per user
+* User management
+* Transaction recording with timestamps
+* Persistent data storage using text and CSV files
+
+## How It Works
+
+The system provides different functionality depending on whether the user logs in as a standard user or an administrator.
+
+### Users
+
+Users can:
+
+* Search for books
+* View available books
+* Borrow books
+* Return books
+* View their borrowing information
+
+### Administrators
+
+Administrators can:
+
+* Add books
+* Remove books
+* Search for books
+* Display the library catalogue
+* Manage users
+
+## Project Structure
+
+The system is organised around several Python classes:
+
+* `Book` — represents books in the library
+* `User` — manages standard user information and functionality
+* `Admin` — provides administrator functionality
+* `Library` — manages the library and its books
+* `LoginSystem` — handles registration and login
+* `Transactions` — records borrowing and returning activity
+
+## Data Storage
+
+The application uses local files to store information:
+
+* `books.csv` — stores book information
+* `users.txt` — stores user information
+* `transactions.txt` — stores transaction records
+
+This allows information to persist between program runs without requiring an external database.
+
+## Running the Project
+
+1. Clone the repository.
+2. Open the project in a Python-compatible IDE.
+3. Make sure the required data files are in the correct directory.
+4. Run the main Python file.
+5. Follow the instructions displayed in the command line.
+
+## What I Learned
+
+This project gave me experience with:
+
+* Object-oriented programming in Python
+* Classes and objects
+* File input/output
+* CSV data handling
+* User authentication
+* Command-line interfaces
+* Program structure and modularity
+* Designing a system using multiple interacting classes
+
+## Project Background
+
+This was an early programming project and represents my earlier experience with Python and software development.
+
+The project is a simple command-line application rather than a production-level library management system.
